@@ -1,0 +1,71 @@
+body {
+        background-attachment: fixed;
+        background-image: url("../images/background.jpg"); 
+        background-position: center     
+}
+.div1{
+    background-color: black;
+    align-self: center;
+    margin: 40px 300px;   
+    border: 4px solid #30cfdd;
+    border-radius: 20px;
+    opacity: .7;
+}
+.text{
+
+    color: white;
+    font-size: 25px;
+    margin: 10px;
+
+}
+.text2
+{
+    color:white;
+    margin-top: -5px
+}
+.form
+{
+   margin-left: 220px
+}
+.input1{
+
+    
+    border-radius: 4px;
+    /* border: 3px solid #30cfdd; */
+    background-color:white ;
+    height: 28px;
+    width: 50%;
+    font-size: 15px;
+
+}
+.log
+{
+    background-color:#30cfdd ;
+    border-radius: 5px;
+    height: 6%;
+    width: 23%;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top:5px
+    
+}
+.icon
+{
+    height: 170px;
+    width: 170px;
+    margin-top: 18px;
+    margin-left: 250px
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #db243c
+    
+}
+.pass
+{
+    margin-left: 45px;
+    font-size: 19px;
+    color:#e9160f
+}
+

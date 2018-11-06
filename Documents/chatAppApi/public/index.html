@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>chatapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/dashboard.css"> 
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/forgot_pass.css">
+    <link rel="stylesheet" href="../assets/css/registration.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="app.js"></script>
+
+    <script src="./controller/reg_controller.js"></script>
+    <script src="./controller/login_controller.js"></script>
+    <script src="./controller/dash_controller.js"></script>
+    <script src="./controller/forgot_pass.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-socket-io/0.7.0/socket.js"></script>
+ 
+
+
+
+</head>
+<body>
+    <div ng-view></div>
+</body>
+</html>

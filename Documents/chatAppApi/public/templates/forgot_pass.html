@@ -1,0 +1,13 @@
+<body ng-app="" ng-controller="myctrl4">
+<form name="div10">
+<div id="maindiv" >
+
+    <h2 id="text">please follow the steps</h2>
+    <p id="message">enter registered email</p>
+    <input id="inputmail" type="email" name="forgot_mail" placeholder="xyz@gmail.com" ng-model="forgot_email" required>
+    <p ng-show="div10.forgot_mail.$error.email" id="ng1">Not a valid e-mail address</p>
+    <input type="submit" value="submit" ng-click="forgot_submit()" id="forgot_submit">
+  
+</div>
+</form>
+</body>

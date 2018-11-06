@@ -1,0 +1,129 @@
+
+ .main_div{
+    background-color: rgb(14, 15, 15);
+    height: 590px;
+    width: 1280px;
+    position: absolute;
+    border: 3px solid rgb(59, 107, 212) 
+}
+
+#ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(59, 107, 212);
+    margin-bottom: 10px
+}
+.li{
+    float: left;
+}
+
+.a1{
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.a2{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    padding-left: 1153px
+
+}
+
+.chat{
+background-color: rgb(237, 239, 241);
+width: 80%;
+height: 87%;
+margin-left: 258px;
+overflow-y: auto;
+}
+
+.send1
+{
+    background-color:  rgb(59, 107, 212);
+    width: 80%;
+    height: 13%;
+   margin-left: 258px;    
+   flex-direction: row 
+}
+
+.submit2{
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: rgb(36, 23, 153)
+
+    }
+.user_list{
+        width: 20%;
+        background-color: rgb(93, 166, 196);
+        margin-left: 0px;
+        height: 100%;
+        float: left;
+        overflow-y: auto;
+} 
+.chat_list
+{
+    border-top-right-radius: 15px;
+    margin-left: 10px;
+    border-bottom-left-radius: 15px;
+    width:40%;
+    background-color: rgb(93, 166, 196);
+    padding-left: 13px;
+    padding-top: 13px;
+    word-wrap: break-word;
+    min-height: 39px;
+    overflow: hidden;  
+    margin-top: 10px;
+}
+.button
+{
+    width: 100%;
+    height: 8%;
+    font-size: 20px;
+
+}
+.send2
+{
+    background-color:  rgb(47, 175, 137);
+    width: 80%;
+    height: 13%;
+   margin-left: 258px;    
+   flex-direction: row 
+}
+
+.chat_list2
+{
+    border-top-right-radius: 15px;
+    margin-left: 10px;
+    border-bottom-left-radius: 15px;
+    width:40%;
+    background-color:  rgb(47, 175, 137);
+    padding-left: 13px;
+    padding-top: 13px;
+    word-wrap: break-word;
+    min-height: 39px;
+    overflow: hidden;  
+    margin-top: 10px;
+}
+#right
+{
+    background-color:  rgb(59, 107, 212);
+    margin-left: 583px;
+    
+  
+}
+#msgbox
+{
+    height: 12%;
+    width: 100%;
+}
+

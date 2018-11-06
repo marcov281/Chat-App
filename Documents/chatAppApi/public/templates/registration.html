@@ -1,0 +1,40 @@
+<div id="div" ng-app="" ng-controller="myctrl1">
+
+  <h2 id="text1">create your chatapp account</h2>
+  <h3 id="text2">continue to chatapp</h3>
+  <form method="post" name="myForm">
+
+    <h3 class="content">user name</h3>
+    <input class="input" type="text" name="username" placeholder="xyz" ng-model="user_name" required>
+    <p class="msg" ng-show="check_name()">The name is required(min 4 digit).</p>
+
+
+    <h3 class="content">email</h3>
+    <input class="input" type="email" name="user_mail" placeholder="xyz@gmail.com" ng-model="email_input" required>
+    <p class="msg" ng-show="myForm.user_mail.$error.email" >Not a valid e-mail address</p>
+
+    <h3 class="content">mobile no</h3>
+    <input class="input" maxlength="10" type="text" name="mobileno" placeholder="985627XXXX" ng-model="mobileNo" required>
+    <p class="msg" ng-show="mob_number()">enter a valid mobile no without prefix</p>
+
+
+
+    <h3 class="content">password</h3>
+    <input class="input" type="password" placeholder="enter password" ng-model="password" required>
+    <p class="msg" ng-show="pass_word()">enter valid password format</p>
+    <p id="warn">Use 4 or more characters with a mix of <br>letters, numbers and symbols</p>
+
+
+
+
+    <h4 class="content">confirm password</h4>
+    <input class="input" type="password"  placeholder="enter the same " ng-model="confirmpass" required >
+    <p class="msg" ng-show="same_pass()">both password should be same</p>
+
+
+    <p id="check"><span><input type="checkbox" value="term" ng-model="check"></span>i agree to term and condition</p>
+    <p ng-show="!check" class="msg">you have to agree to our term and conditions</p>
+    <input id="submit" type="submit" value="submit" value="submit" ng-click="submit()">
+
+  </form>
+</div>

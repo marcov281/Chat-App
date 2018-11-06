@@ -1,0 +1,40 @@
+<!-- <head><link rel="stylesheet" href="../assets/css/dashboard.css"> </head> -->
+
+<head ng-app="" ng-controller="myctrl3"></head>
+<div>
+    <ul id="ul">
+        <li class="li"><a class="a1" class="active" href="#home">Home</a></li>
+        <li class="li"><a class="a2" href="#logout" ng-click="$event.preventDefault();logout()">logout</a></li>
+        <!-- <li class="li"><a class="a2"  >{{username}}</a></li> -->
+    </ul>
+</div>
+<div class="main_div" ng-app="" ng-controller="myctrl3">
+
+    <div class="user_list">
+        <button class="button" ng-repeat="user in list track by $index" id={{user}} ng-click="chatroom($event)">{{user}}<br> 
+        </button>
+    </div>
+    <div class="chat">
+
+     <h3 ng-repeat="chat in chat_array track by $index" ng-show="group_display" ><div class="chat_list">{{chat}}</div></h3> 
+     <div id="msgbox" ng-repeat="chat_person in chat_array_person track by $index" >
+
+     <div id="left" ng-if="chat_person.username!=username"class="chat_list2" ng-show="person_display" >{{chat_person.username}}:{{chat_person.msg}}<span>{{chat_person.date|date:'medium'}}</span></div><br>
+     <div id="right"   ng-if="chat_person.username==username" class="chat_list2" ng-show="person_display" >{{chat_person.username}}:{{chat_person.msg}}<span>{{chat_person.date|date:'medium'}}</span></div><br>
+    
+     </div> 
+
+    </div>
+
+<div class="send1" ng-show="login_send">
+        <input type="text" name="input" placeholder="enter your message" ng-model="message" style="margin-top: 6px;height: 50px;width: 80%;overflow-y: auto;overflow-x: auto;"/>
+        <input type="submit" class="submit2" ng-click="send_message()" value="send">
+        <!-- </div> -->
+</div>
+
+
+<div class="send2" ng-show="person_send">
+    <input type="text" name="input" placeholder="enter your message" ng-model="message" style="margin-top: 6px;height: 50px;width: 80%;overflow-y: auto;overflow-x: auto;"/>
+    <input type="submit" class="submit2" ng-click="send_message_person()" value="send">
+    <!-- </div> -->
+</div>

@@ -1,0 +1,23 @@
+
+<body >
+<h1>Chat App</h1>
+<div class="div1">
+<img class="icon" src="../assets/images/icon.png" alt="user account" height="150px" width="150px" >
+<form class="form" method='POST' ng-app="" name="myForm">
+        <h3 class="text">User Name</h3>
+        <input class="input1" type="email" name="User_Name" placeholder="eg-xyz@gmail.com" ng-model="username" required>
+        <p ng-show="myForm.User_Name.$error.email" style="color:red" >Not a valid e-mail address</p>
+
+        <h3 class="text">Password</h3>
+        
+        <input class="input1" type="password" name="Password" placeholder="enter Password" ng-model="password" required>
+        <p id="password" style="color:red"></p>
+        <br>
+        <p class="text2"><span><input type="checkbox" value="remember me"></span>remember me</p>
+        <br>
+        <p><button class="log"><a href="#signup" >signup</a></button></a><input  class="log" type="submit" value="login" ng-click="signin()"></p>
+        <br>
+        <a class="pass" ng-click="forgot_pass()" href="#forgot_pass">forgot password</a>
+    </form>
+</div>
+</body>

@@ -1,0 +1,20 @@
+<body ng-app="" ng-controller="myctrl5">
+<form name="ng2">
+<div id="change_div">
+
+
+<h2 class="change_msg">enter the new password</h2>
+<input type="email" class="change_mail" name="change_mail1">
+<p ng-show="ng2.change_mail1.$error.email" class="error" >Not a valid e-mail address</p>
+
+
+<h2 class="change_msg">confirm password</h2>
+<input type="email" class="change_mail" name="change_mail2">
+<p ng-show="ng2.change_mail2.$error.email" class="error" >Not a valid e-mail address</p>
+
+
+<input type="submit" value="change password" ng-click="change_pass()">
+
+</div>
+</form>
+</body>

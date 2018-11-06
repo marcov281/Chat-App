@@ -1,0 +1,47 @@
+#maindiv{
+ 
+    background-color: rgb(62, 103, 179);
+    height: 300px;
+    width: 400px;
+    margin-left: 416px;
+    margin-top: 123px;
+    opacity: 0.9;
+
+}
+#text
+{
+    padding-left: 61px;
+    padding-top: 29px;
+    font-size: 28px;
+    margin-top: 35px;
+    color: white
+}
+
+#inputmail{
+    width: 89%;
+    height: 10%;
+    margin-left: 20px;
+    font-size: 19px;
+    border:2px solid rgb(155, 51, 51);
+    border-radius: 3px
+}
+#message
+{
+    margin-left: 21px;
+    color: white;
+    font-size: 20px
+}
+
+#forgot_submit{
+    margin-left: 134px;
+    margin-top: 48px;
+    width: 127px;
+    height: 37px;
+    background-color: lightseagreen;
+    border-radius: 11px;
+    font-size: 17px;
+}
+#ng1{
+    color:red;
+    margin-left: 20px
+}
